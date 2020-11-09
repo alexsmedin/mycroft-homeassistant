@@ -14,7 +14,7 @@ mycroft:
     - "/dev/snd:/dev/snd"
   environment:
     - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
-    - DISPLAY=:0.0
+    - DISPLAY=unix:0.0
   volumes:
     - /srv/mycroft:/root/.mycroft
     - ~/.config/pulse/cookie:/root/.config/pulse/cookie
