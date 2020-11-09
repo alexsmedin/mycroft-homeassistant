@@ -10,7 +10,7 @@ mycroft:
   volumes:
     - /srv/mycroft:/root/.mycroft
     - ~/.config/pulse/cookie:/root/.config/pulse/cookie
-    - /tmp/.X11-unix:/tmp/.X11-unix
+    - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native
     - /dev/dri:/dev/dri
     - /dev/shm:/dev/shm
     - /etc/machine-id:/etc/machine-id
