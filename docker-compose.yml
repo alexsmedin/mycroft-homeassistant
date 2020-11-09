@@ -13,8 +13,8 @@ mycroft:
   devices:
     - "/dev/snd:/dev/snd"
   environment:
-    - XDG_RUNTIME_DIR=/tmp/xdg_runtime
     - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
+    - DISPLAY=:0.0
   volumes:
     - /srv/mycroft:/root/.mycroft
     - ~/.config/pulse/cookie:/root/.config/pulse/cookie
