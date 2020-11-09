@@ -3,7 +3,7 @@
 # --ulimit rtprio=95 --ulimit memlock=-1 mycroft:latest
 
 mycroft:
-  image: mycroft:latest
+  image: mycroftai/docker-mycroft:latest
   privileged: true
   devices:
     - "/dev/snd:/dev/snd"
