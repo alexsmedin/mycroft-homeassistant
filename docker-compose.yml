@@ -19,5 +19,6 @@ mycroft:
     - /srv/mycroft:/root/.mycroft
     - ~/.config/pulse/cookie:/root/.config/pulse/cookie
     - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native
+    - /tmp/.X11-unix:/tmp/.X11-unix
   ports:
     - 8181:8181
