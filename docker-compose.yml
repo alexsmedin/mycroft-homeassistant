@@ -16,6 +16,7 @@ mycroft:
     - /etc/machine-id:/etc/machine-id
     - /run/dbus:/run/dbus
   environment:
+    - XDG_RUNTIME_DIR=/tmp/xdg_runtime
     - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
   ports:
     - 8181:8181
